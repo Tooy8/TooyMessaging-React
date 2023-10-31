@@ -55,7 +55,6 @@ export default function Room(props: any) {
     //  catch {
     //   console.log("error");
     // }
-    console.log(messages);
   });
 
   //发送消息
@@ -198,7 +197,6 @@ const Container = styled.div`
     height: 80%;
     background-color: #f3f3f3;
     border-radius: 10px 10px 0 0;
-    padding-top: 40px;
     overflow-y: scroll;
     overflow-x: hidden;
     ::-webkit-scrollbar {
@@ -208,7 +206,7 @@ const Container = styled.div`
     position: relative;
 
     .topName {
-      width: 56%;
+      width: 100%;
       height: 40px;
       background-color: rgb(230, 230, 230);
       text-align: center;
@@ -217,9 +215,6 @@ const Container = styled.div`
       border-bottom: 1px solid #ccc;
       border-radius: 5px;
       font-weight: 900;
-      position: fixed;
-      top: 94px;
-      right: 243px;
     }
     .loading {
       position: absolute;
